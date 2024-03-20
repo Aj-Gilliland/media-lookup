@@ -1,0 +1,141 @@
+.theTitle{
+  color: gold;
+
+}
+
+.its-3am{
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+  margin-top: 4%;
+  background-color: rgba(0, 0, 0, 0.709);
+  border-radius: 15%;
+  padding: 1%;
+  border: solid;
+  border-color: gold;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align:justify;
+}
+
+.side-by-side{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.contrast-div{
+  background-color: rgba(92, 9, 9, 0.696);
+}
+
+.input-text{
+  font-size: smaller;
+  padding: 1%;
+  background-color: rgba(55, 0, 0, 0.662);
+  color: white;
+  outline-color: gold;
+}
+
+.toolTip{ 
+  text-align: center;
+  display: none;
+  z-index: 1;
+  font-size: large;
+}
+
+.toolTipTrigger:hover .toolTip{/* this class sets things on*/
+  display: block;
+}
+
+.toolTipTrigger:hover .turn-off{/* this class sets things on*/
+  display: none;
+}
+
+.search-button{
+  border-radius: 25%;
+ border: solid;
+ color: rgba(255, 255, 255, 0.633);
+ background-color: rgba(55, 0, 0, 0.662);
+}
+
+/*this is the mirror pic https://img.freepik.com/premium-vector/realistic-retro-vintage-make-up-mirror-with-light-bulbs-illustration-beauty-backstage-concept_100011-679.jpg?size=626&ext=jpg */
+.movieBox{
+  background-image: url('https://cdn.vectorstock.com/i/preview-1x/18/96/red-and-black-background-with-stars-vector-3971896.jpg');
+  background-size:cover ;
+  background-color: rgb(96, 14, 14);
+  border-radius: 10%;
+  height: 98%;
+  padding-left: 4%;
+  padding-right: 4%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: auto;
+  border: solid;
+  border-color: gold;
+}
+
+.poster{
+ box-shadow: 5px 10px rgba(0, 0, 0, 0.489);
+ width: 6em;
+ height: 8em;
+ display: flex;
+ align-content: center;
+}
+
+
+.sideways-div::-webkit-scrollbar, .its-3am::-webkit-scrollbar{
+  display: none;
+}
+
+.sideways-div{
+  height: 16em;
+  width: 70%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-size: cover;
+  background-image: url('./images/red-color-transformed.jpg');
+  background-position: center;
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
