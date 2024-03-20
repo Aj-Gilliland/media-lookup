@@ -35,4 +35,9 @@
       "last 1 safari version"
     ]
   }
+  ,"engines": {
+    "node": "18.17.0",
+    "npm": "10.4.0"
+  }
+  
 }
