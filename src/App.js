@@ -19,7 +19,7 @@ function App() {
   async function search (){//querys the api for data
   const inputValue = document.querySelector('input').value; //first need to get the data from the input box 
   console.log(`searched ${inputValue}`)//showing what was queryed to the api
-  const response = await(await fetch(`http://www.omdbapi.com/?s=${inputValue.replaceAll(' ', '+')}&apikey=7236f328`)).json()//the replace all was added to combat the url needing pluses inbetween everything instead of spaces
+  const response = await(await fetch(`https://www.omdbapi.com/?s=${inputValue.replaceAll(' ', '+')}&apikey=7236f328`)).json()//the replace all was added to combat the url needing pluses inbetween everything instead of spaces
   console.log(response.Search)//showing api response
   if (response.Search !== undefined){//a little search validation
   setMovieData(response.Search[0])
@@ -64,7 +64,7 @@ function App() {
     useEffect(() => {
       
       async function getData(title) {
-      const response = await(await fetch(`http://www.omdbapi.com/?t=${title.replaceAll(' ', '+')}&apikey=7236f328`)).json()
+      const response = await(await fetch(`https://www.omdbapi.com/?t=${title.replaceAll(' ', '+')}&apikey=7236f328`)).json()
       .catch(console.error);
       setTipData(response)
       console.log(tipData)}
